@@ -1,0 +1,9 @@
+#!url=https://raw.githubusercontent.com/yourgithubuser/yourrepo/main/CapCut_VIP.sgmodule
+#!name=CapCut VIP Unlock (Demo)
+#!desc=Fake CapCut VIP for testing purpose only
+
+[Script]
+CapCutVIP = type=http-response, pattern=^https:\/\/api\.capcut\.com\/user\/subscription\/status, script-path=https://raw.githubusercontent.com/yourgithubuser/yourrepo/main/capcut_vip.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% api.capcut.com
